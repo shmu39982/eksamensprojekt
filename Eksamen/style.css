@@ -1,0 +1,128 @@
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #679e97;
+  color: #ffffff;
+  font-size: 30px;
+  background-image: url('blomster.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  margin:0;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #448064;
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #679e97 on hover */
+li a:hover {
+background-color: #679e97;
+}
+
+ul {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Style på skærm over 550px */
+@media only screen and (min-width:550px){
+  html,body {
+      height: 100%;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #448064;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #679e97 on hover */
+  li a:hover {
+    background-color: #679e97;
+  }
+
+  ul {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/*
+body {
+  max-width: 1000px;
+  margin:auto;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu '
+    'main'
+    'right'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  background-color: rgb(244, 60, 121);
+  padding: 10px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container > * {
+  background-color: rgb(117, 82, 173);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+  .grid-container{
+    height: 100%;
+    grid-template-areas:
+        'header header header header '
+        'menu main main right'
+        'footer footer footer footer';
+      grid-template-columns: 1fr 3fr 1fr 1fr;
+      grid-template-rows: 100px auto 100px;
+      grid-gap: 10px;
+      background-color: rgb(244, 60, 121);
+      padding: 10px;
+    }
+  }
